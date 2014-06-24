@@ -1,0 +1,133 @@
+@import "bourbon/bourbon";
+@import "base/base";
+@import "grid-settings";
+@import "neat/neat";
+
+$white: #fff;
+$gray: #f3f3f3;
+$red: #ef6959;
+$yellow: #fbb349;
+$blue: #259fbf;
+
+h1,h2,h3,h4,h5 {
+  font-family: Lucida Grande;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $gray;
+  font-family: Lucida Grande;
+  font-size: 12px;
+  color: #444;
+}
+
+a {
+  color: #333;
+  &:hover {
+    color: black;
+  }
+}
+
+nav {
+  background-color: $white;
+  padding-top: 8px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  div.container {
+    max-width: 73em;
+    .brand img {
+      height: 31px;
+    }
+  }
+  ul.nav-buttons {
+    float: right;
+    li {
+      a { font-size: 11px; }
+      display: inline-block;
+    }
+  }
+}
+
+.row {
+  @include row;
+}
+
+.button {
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 13px;
+  font-family: Helvetica;
+  &.primary {
+    &:hover {
+      background-color: darken($blue, 20%);
+    }
+    margin: 0 10px;
+    padding: 0 25px;
+    background-color: $blue;
+    color: white;
+  }
+}
+div.container {
+  @include outer-container;
+}
+
+div.element {
+  font-size: 9pt;
+  color: #666;
+  line-height: 1.3;
+  font-family: Georgia;
+  @include span-columns(3);
+  &.type a { border-bottom: 4px solid $blue; }
+  &.colors a { border-bottom: 4px solid $yellow; }
+  &.artwork a { border-bottom: 4px solid $red; }
+  a {
+    display: inline-block;
+    img {
+      margin-bottom: 27px;
+      vertical-align: baseline;
+    }
+  }
+  h4 {
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 4px;
+    padding-top: 7px;
+    font-weight: 100;
+    margin: 20px;
+  }
+}
+
+div.offset {
+  @include shift(1);
+}
+
+.headline {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: -0.25px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.call-to-action {
+  margin-top: 50px;
+  letter-spacing: 0px;
+  font-size: 11pt;
+  text-align: center;
+  .button {
+    padding-top: 4px;
+    margin: 18px;
+  }
+}
+
+.footer {
+  margin-top: 30px;
+  height: 50px;
+}
