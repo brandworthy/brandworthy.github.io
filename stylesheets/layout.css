@@ -229,10 +229,8 @@ nav {
   padding-top: 8px;
   padding-bottom: 5px;
   margin-bottom: 10px; }
-  nav div.container {
-    max-width: 73em; }
-    nav div.container .brand img {
-      height: 31px; }
+  nav div.container .brand img {
+    height: 29px; }
   nav ul.nav-buttons {
     float: right; }
     nav ul.nav-buttons li {
@@ -241,7 +239,8 @@ nav {
         font-size: 11px; }
       nav ul.nav-buttons li a.button.primary {
         margin: 0 10px;
-        padding: 0 25px; }
+        padding-left: 25px;
+        padding-right: 25px; }
 
 .row {
   display: block; }
@@ -250,13 +249,15 @@ nav {
     display: table;
     clear: both; }
 
+input[type=submit] {
+  border-radius: 0; }
+
 .button {
   text-transform: uppercase;
   display: inline-block;
-  line-height: 30px;
   font-weight: bold;
-  font-size: 13px;
-  font-family: Helvetica; }
+  font-family: Helvetica;
+  padding: 8px; }
   .button.primary {
     background-color: #259fbf;
     color: white; }
@@ -264,7 +265,7 @@ nav {
       background-color: #14586a; }
 
 div.container {
-  max-width: 61.0625em;
+  max-width: 73.125em;
   margin-left: auto;
   margin-right: auto; }
   div.container:after {
@@ -279,21 +280,22 @@ div.element {
   font-family: Georgia;
   float: left;
   display: block;
-  margin-right: 1.06838%;
-  width: 26.49573%; }
+  margin-right: 6.21776%;
+  width: 29.18816%; }
   div.element:last-child {
     margin-right: 0; }
   div.element.type a {
     border-bottom: 4px solid #259fbf; }
   div.element.colors a {
-    border-bottom: 4px solid #fbb349; }
+    border-bottom: 4px solid #2db579; }
   div.element.artwork a {
-    border-bottom: 4px solid #ef6959; }
+    border-bottom: 4px solid #f06a5a; }
   div.element a {
-    display: inline-block; }
+    display: inline-block;
+    text-align: center; }
     div.element a img {
-      margin-bottom: 27px;
-      vertical-align: baseline; }
+      width: 76%;
+      margin-bottom: 27px; }
   div.element h4 {
     color: #444;
     text-transform: uppercase;
@@ -305,7 +307,7 @@ div.element {
     margin: 20px; }
 
 div.offset {
-  margin-left: 9.18803%; }
+  margin-left: 8.85148%; }
 
 .headline {
   text-align: center;
@@ -317,28 +319,38 @@ div.offset {
   margin-bottom: 40px; }
 
 .call-to-action {
-  margin-top: 50px;
+  margin-top: 60px;
   letter-spacing: 0px;
   font-size: 11pt;
   text-align: center; }
 
 .subscribe {
-  color: #666666; }
+  color: #666666;
+  margin-top: 15px; }
   .subscribe input {
     display: inline-block;
-    float: left;
-    display: block;
-    margin-right: 1.06838%;
-    width: 100%; }
-    .subscribe input:last-child {
-      margin-right: 0; }
+    font-size: 12px; }
+  .subscribe input[type=email] {
+    height: 35px;
+    width: 28%;
+    padding: 10px; }
+    .subscribe input[type=email]::-webkit-input-placeholder {
+      color: #ddd;
+      text-transform: uppercase; }
+    .subscribe input[type=email]::-moz-placeholder {
+      color: #ddd;
+      text-transform: uppercase; }
+    .subscribe input[type=email]:-moz-placeholder {
+      color: #ddd;
+      text-transform: uppercase; }
+    .subscribe input[type=email]:-ms-input-placeholder {
+      color: #ddd;
+      text-transform: uppercase; }
   .subscribe input[type=submit] {
-    float: left;
-    display: block;
-    margin-right: 1.06838%;
-    width: 100%; }
-    .subscribe input[type=submit]:last-child {
-      margin-right: 0; }
+    border-radius: none;
+    border: 1px solid #259fbf;
+    padding: 8px 20px;
+    height: 33px; }
 
 .footer {
   margin-top: 30px;
