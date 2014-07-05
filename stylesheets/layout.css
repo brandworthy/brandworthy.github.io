@@ -224,20 +224,20 @@ a {
   a:hover {
     color: black; }
 
-nav {
+#nav {
   background-color: white;
   padding-top: 8px;
   padding-bottom: 5px;
   margin-bottom: 10px; }
-  nav div.container .brand img {
+  #nav div.container .brand img {
     height: 29px; }
-  nav ul.nav-buttons {
+  #nav ul.nav-buttons {
     float: right; }
-    nav ul.nav-buttons li {
+    #nav ul.nav-buttons li {
       display: inline-block; }
-      nav ul.nav-buttons li a {
+      #nav ul.nav-buttons li a {
         font-size: 11px; }
-      nav ul.nav-buttons li a.button.primary {
+      #nav ul.nav-buttons li a.button.primary {
         margin: 0 10px;
         padding-left: 25px;
         padding-right: 25px; }
