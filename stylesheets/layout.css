@@ -316,7 +316,20 @@ div.offset {
   font-weight: 500;
   color: #333333;
   margin-top: 60px;
-  margin-bottom: 40px; }
+  margin-bottom: 10px; }
+
+.lead {
+  font-size: 120%;
+  text-align: center;
+  margin-bottom: 2.5em;
+  display: block;
+  margin-left: 8.85148%;
+  float: left;
+  display: block;
+  margin-right: 6.21776%;
+  width: 82.29704%; }
+  .lead:last-child {
+    margin-right: 0; }
 
 .call-to-action {
   margin-top: 60px;
